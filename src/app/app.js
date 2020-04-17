@@ -1,10 +1,17 @@
 import angular from 'angular';
-import {SellerComponent} from './components/seller.component';
+
+import 'angular-ui-router';
+
+import './components/seller.component';
+
+import './services/service';
+
+import Approutes from './config/config';
 
 const MODULE_NAME = 'app';
 
-var poc = angular.module(MODULE_NAME, []);
-  
-poc.component(SellerComponent.selector,SellerComponent)
+angular.module(MODULE_NAME, ['ui.router', 'sellersview', 'sellerservices'])
+
+.config(Approutes);
 
 export default MODULE_NAME;
