@@ -1,11 +1,12 @@
 {
-  "name": "angular_poc",
+  "name": "test_assignment",
   "version": "1.0.0",
   "description": "POC",
   "scripts": {
-    "build": "webpack --bail --progress --profile",
+    "prod": "webpack --config webpack.config.js --env.production --mode=production",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
-    "start": "npm run server"
+    "start": "npm run server",
+    "build": "npm run prod"
   },
   "author": "",
   "license": "",
@@ -15,7 +16,9 @@
     "angular-sanitize": "^1.7.9",
     "angular-ui-router": "^1.0.25",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0"
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

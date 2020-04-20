@@ -1,4 +1,4 @@
-# POC on - Angular JS Seller Info All with Components, Webpack and ES6#
+# Test Assignment on - Angular JS Seller Info All with Components, Webpack and ES6#
 
 The Project aim to create a app where user can add and view seller information.
 
@@ -12,9 +12,20 @@ The Project aim to create a app where user can add and view seller information.
 npm install
 ````	
 
-3. After installation complete Run this command
+3. After installation complete Run below command
 ```
 npm start
 ```
 
 Webpack Dev Server will run on this path `http://localhost:8080`
+
+# Build
+
+Run npm Build command.
+
+````
+npm build
+
+````
+
+After Finish this Dist Folder Will be created of application with all files.

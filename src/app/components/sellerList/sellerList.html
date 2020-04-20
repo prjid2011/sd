@@ -1,0 +1,27 @@
+<div class="seller-info-list">
+    <div class="heading">{{$ctrl.name}}</div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Currencies</th>
+          <th scope="col">Offices</th>
+          <th scope="col">Bidded Deals</th>
+          <th scope="col">Guaranteed Deals</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="seller in $ctrl.sellerList track by $index">
+          <td>{{seller.name}}</td>
+          <td>{{seller.currency.toString()}}</td>
+          <td>{{seller.office.toString()}}</td>
+          <td>{{seller.biddeddeal}}</td>
+          <td>{{seller.guarunteeddeal}}</td>
+          <td><button class="delete-seller-info btn btn-secondary fa fa-trash-o" ng-disabled="$ctrl.isEdit" ng-click="$ctrl.deleteInfo(seller.id)"></button></td>
+          <td><button class="edit-seller-info btn btn-secondary fa fa-pencil" ng-disabled="$ctrl.isEdit" ng-click="$ctrl.editInfo(seller.id)"></button></td>
+        </tr>
+      </tbody>
+    </table>
+</div> 

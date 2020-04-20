@@ -1,0 +1,97 @@
+$errorColor : #ff0000;
+$fontsmall:15px;
+$fontbig:18px;
+
+.container{
+
+    width: 80%;
+    margin: 0 auto;
+    
+    .form-container{
+        display: flex;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        width: 100%;
+        font-size: $fontsmall;
+
+        .seller-info-form {
+            width: 400px;
+
+            .form-control{
+                border-radius: 0;
+                border-color: #000;
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+
+            .form-group{
+                .col-form-label{
+                    text-align: right;
+                }
+                button{
+                    box-shadow: none;
+                    background: transparent;
+                }
+                .dropdown-toggle{
+                    &::after{
+                        float: right;
+                        margin-top:10px;
+                    }  
+                }
+            }
+
+            .button-container {
+                margin-top: 10px;
+                float: right;
+            }
+
+            .sellerForm-validation-text {
+                color: $errorColor;
+            }
+
+            .form-error-field{
+                border: 1px solid $errorColor;
+            }
+            .deals{
+                padding-left: 0;
+            }
+        }
+    }
+
+    .seller-info-list{
+        width: 100%;
+        font-size: $fontsmall;
+        font-weight: normal;
+        table{
+            thead {
+                th{
+                    font-size: $fontsmall;
+                    font-weight: normal;
+                    color:#9f9898;
+                }
+            }
+
+            tbody {
+                td{
+                    font-size: $fontsmall;
+                    font-weight: normal;
+
+                    button {
+                        background: transparent;
+                        color: #000;
+                        border: 0;
+                        font-size: 18px;
+                        padding: 0;
+                    }
+                }
+            }
+        }   
+    }
+    .heading {
+        font-size: $fontbig;
+        margin-bottom: 20px;
+    }
+
+}
